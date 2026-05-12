@@ -1,0 +1,35 @@
+    body {
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    
+        
+    }
+
+    h1 {
+        color: purple;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    h2 {
+        color: darkgreen;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    a {
+        color: darkred;
+    }
+    #Experience ul {
+    display: flex;
+    gap: 20px;
+}
+
+#Connect {
+    display: flex;
+    gap: 20px;
+}
