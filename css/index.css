@@ -1,35 +1,40 @@
-    body {
-        background-color: lightblue;
-        font-family: Arial, sans-serif;
-        padding: 20px;
-    
-        
-    }
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: black;
+}
 
-    h1 {
-        color: purple;
-        font-size: 60px;
-        text-align: center;
-    }
+h1 {
+    color: purple;
+    font-size: 60px;
+    text-align: center;
+}
 
-    h2 {
-        color: darkgreen;
-    }
+h2 {
+    color: darkgreen;
+}
 
-    p {
-        font-size: 20px;
-        line-height: 1.5;
-    }
+p {
+    font-size: 20px;
+}
 
-    a {
-        color: darkred;
-    }
-    #Experience ul {
+section {
+    margin-bottom: 40px;
+}
+
+#Experience ul {
     display: flex;
     gap: 20px;
 }
 
-#Connect {
-    display: flex;
-    gap: 20px;
+#Experience li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#Connect a {
+    color: darkred;
+    font-weight: bold;
 }
