@@ -8,10 +8,13 @@ h1 {
     color: purple;
     text-align: center;
     font-size: 60px;
+    font-weight: bold;
+
 }
 
 h2 {
     color: darkgreen;
+    font-weight: bold;
 }
 
 section {
@@ -44,9 +47,10 @@ section {
     border-radius: 10px;
 }
 
-#Connect a {
-    color: darkred;
-    font-weight: bold;
+#Connect {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer {
