@@ -1,22 +1,17 @@
 body {
     background-color: lightblue;
     font-family: Arial, sans-serif;
-    padding: 20px;
     color: black;
 }
 
 h1 {
     color: purple;
-    font-size: 60px;
     text-align: center;
+    font-size: 60px;
 }
 
 h2 {
     color: darkgreen;
-}
-
-p {
-    font-size: 20px;
 }
 
 section {
@@ -26,6 +21,8 @@ section {
 #Experience ul {
     display: flex;
     gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 #Experience li {
@@ -34,7 +31,26 @@ section {
     border-radius: 10px;
 }
 
+#Skills ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#Skills li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 #Connect a {
     color: darkred;
     font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
 }
