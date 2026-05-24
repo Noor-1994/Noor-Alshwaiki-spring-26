@@ -62,3 +62,41 @@ footer {
     padding-bottom: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+}
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#messages li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+

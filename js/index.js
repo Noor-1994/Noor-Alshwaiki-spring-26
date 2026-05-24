@@ -6,6 +6,7 @@ const today = new Date();
 
 const thisYear = today.getFullYear();
 
+
 const footerElement = document.querySelector('footer');
 
 const copyright = document.createElement('p');
@@ -28,3 +29,45 @@ for (let i = 0; i < skills.length; i++) {
 
     skillsList.appendChild(skill);
 }
+
+const messageForm = document.querySelector('[name="leave_message"]');
+
+messageForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const usersName = event.target.usersName.value;
+
+    const usersEmail = event.target.usersEmail.value;
+
+    const usersMessage = event.target.usersMessage.value;
+
+    console.log(usersName, usersEmail, usersMessage);
+
+    const messageSection = document.querySelector('#messages');
+
+    const messageList = messageSection.querySelector('ul');
+
+    const newMessage = document.createElement('li');
+    
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span> wrote: ${usersMessage}</span>`;
+    const removeButton = document.createElement('button');
+
+    removeButton.innerText = 'remove';
+
+    removeButton.type = 'button';
+
+    removeButton.addEventListener('click', function() {
+
+    const entry = removeButton.parentNode;
+
+    entry.remove();
+
+});
+
+newMessage.appendChild(removeButton);
+
+messageList.appendChild(newMessage);
+
+messageForm.reset(); 
+
+});
