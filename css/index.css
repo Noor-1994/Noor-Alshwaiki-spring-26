@@ -91,6 +91,9 @@ button {
 #messages ul {
     list-style: none;
     padding: 0;
+    #messages button {
+    margin-left: 10px;
+}
 }
 
 #messages li {
