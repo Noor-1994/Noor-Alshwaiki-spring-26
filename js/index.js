@@ -72,7 +72,7 @@ messageForm.reset();
 
 });
 
-ffetch('https://api.github.com/users/Noor-1994/repos')
+fetch('https://api.github.com/users/Noor-1994/repos')
   .then(response => response.json())
   .then(data => {
     const repositories = data;
