@@ -71,3 +71,26 @@ messageList.appendChild(newMessage);
 messageForm.reset(); 
 
 });
+
+ffetch('https://api.github.com/users/Noor-1994/repos')
+  .then(response => response.json())
+  .then(data => {
+    const repositories = data;
+
+    console.log(repositories);
+
+    const projectSection = document.querySelector('#projects');
+    const projectList = projectSection.querySelector('ul');
+
+    for (let i = 0; i < repositories.length; i++) {
+
+      const project = document.createElement('li');
+
+      project.innerText = repositories[i].name;
+
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.log(error);
+  });

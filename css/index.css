@@ -103,3 +103,20 @@ button {
     margin-bottom: 10px;
 }
 
+#projects ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#projects li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#messages button {
+    margin-left: 10px;
+}
