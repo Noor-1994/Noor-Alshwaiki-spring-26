@@ -21,41 +21,83 @@ section {
     margin-bottom: 40px;
 }
 
-#Experience ul {
+#experience ul {
     display: flex;
     gap: 20px;
     list-style: none;
     padding: 0;
 }
 
-#Experience li {
+#experience li {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
 }
 
-#Skills ul {
+#skills ul {
     display: flex;
     gap: 20px;
     list-style: none;
     padding: 0;
 }
 
-#Skills li {
+#skills li {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
 }
 
-#Connect {
+#connect a {
+    color: darkred;
+    font-weight: bold;
+}
+
+#connect {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
-
 footer {
     text-align: center;
     margin-top: 100px;
     padding-bottom: 20px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+}
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#messages li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
