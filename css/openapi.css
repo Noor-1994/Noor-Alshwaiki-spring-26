@@ -1,0 +1,33 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#weatherOutput {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: darkblue;
+    text-decoration: none;
+}

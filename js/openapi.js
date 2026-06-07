@@ -41,9 +41,22 @@ forecastBtn.addEventListener("click", function () {
 
         .then(data => {
 
+            let weatherCondition = "";
+
+            if (data.current.weather_code === 0) {
+                weatherCondition = "Clear Sky";
+            } else if (data.current.weather_code === 1) {
+                weatherCondition = "Mainly Clear";
+            } else if (data.current.weather_code === 2) {
+                weatherCondition = "Partly Cloudy";
+            } else if (data.current.weather_code === 3) {
+                weatherCondition = "Overcast";
+            } else {
+                weatherCondition = "Unknown Weather";
+            }
+
             weatherOutput.textContent =
-                "Weather Code: " +
-                data.current.weather_code;
+                "Weather Condition: " + weatherCondition;
 
         })
 
