@@ -94,3 +94,6 @@ fetch('https://api.github.com/users/Noor-1994/repos')
   .catch(error => {
     console.log(error);
   });
+
+  const temperatureBtn = document.getElementById("temperatureBtn");
+const weatherOutput = document.getElementById("weatherOutput");
