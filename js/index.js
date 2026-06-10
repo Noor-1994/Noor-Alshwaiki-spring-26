@@ -95,5 +95,4 @@ fetch('https://api.github.com/users/Noor-1994/repos')
     console.log(error);
   });
 
-  const temperatureBtn = document.getElementById("temperatureBtn");
-const weatherOutput = document.getElementById("weatherOutput");
+  
